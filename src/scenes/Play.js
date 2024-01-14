@@ -104,7 +104,6 @@ class Play extends Phaser.Scene {
       this.p1Score,
       scoreConfig
     );
-
     // gameover flag
     this.gameOver = false;
 
@@ -204,6 +203,7 @@ class Play extends Phaser.Scene {
 
     // score add and text update
     this.p1Score += ship.points;
+    console.log(ship.points);
     this.scoreLeft.text = this.p1Score;
 
     this.sound.play("sfx-explosion");
